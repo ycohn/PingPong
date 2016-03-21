@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Score.create(email: "playerone@aol.com", high_score: 22)
+Score.create(email: "playertwo@aol.com", high_score: 20)
+Score.create(email: "playerthree@aol.com", high_score: 11)
