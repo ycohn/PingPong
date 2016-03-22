@@ -1,7 +1,22 @@
-<ul>
-  <%@users.each do |user|%>
-  <li><%=user.name%></li>
-  <li><%=user.email%></li>
-  <li><%=user.high_score%></li>
-  <%end%>
-</ul>
+<div class="container">
+  <table class="table table-striped table-hover ">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>High Score</th>
+      </tr>
+    </thead>
+    <tbody>
+    <%@users.each do |user|%>
+      <tr class="info">
+        <td><%=user.id %></td>
+        <td><%=user.name%></td>
+        <td><%=user.email%></td>
+        <td><%=user.high_score%></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table> 
+</div>
