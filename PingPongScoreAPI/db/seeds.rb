@@ -8,3 +8,5 @@
 Score.create(email: "playerone@aol.com", high_score: 22)
 Score.create(email: "playertwo@aol.com", high_score: 20)
 Score.create(email: "playerthree@aol.com", high_score: 11)
+Score.create(email: "playerfour@aol.com", high_score: 10)
+Score.create(email: "playerfive@aol.com", high_score: 6)
