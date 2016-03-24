@@ -14,9 +14,7 @@ class AccessApi
     if response.success?
       i = 0
       while i < response["scores"].length
-        # binding.pry
         if response["scores"][i]["email"] == email
-          # binding.pry
           user = self.new(response["scores"][i]["email"], response["scores"][i]["high_score"])
         end
        i += 1
