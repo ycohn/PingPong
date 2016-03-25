@@ -6,8 +6,13 @@ describe "GET '/'" do
     visit '/'
     expect(page.body).to include("PingPongScoreboard")
   end
-  it "has a table with the players names, emails, and scores" do
+  it 'does not show table on load' do
     visit '/'
+    expect(page).not_to have_selector("info")
+  end
+  it "shows table with the players names, emails, and scores when clicked" do
+    visit '/'
+    click_link('Show High Scores')
     expect(page.body).to have_css("table")
     name = page.find('#name-0')
     email = page.find('#email-0')
