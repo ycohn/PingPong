@@ -8,3 +8,5 @@
 User.create(email: "playerone@aol.com", name: "Ron Weasly")
 User.create(email: "playertwo@aol.com", name: "Hermione Granger")
 User.create(email: "playerthree@aol.com", name: "Harry Potter")
+User.create(email: "playerfour@aol.com", name: "Ginny Weasly")
+User.create(email: "playerfour@aol.com", name: "Neville Longbottom")
